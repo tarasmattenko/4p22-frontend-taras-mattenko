@@ -145,12 +145,14 @@ color: #FFFFFF;
 }
 
 .skroll-search {
-        position: fixed;
-    top: 110px;
-    left: 280px;
+    position: fixed;
+    top: 89px;
+    left: 302px;
+    height: 19%;
     width: 85%;
     padding: 10px;
     z-index: 40;
+    background: #ffffff;
 }
 
 .skroll-search__alphabet {
