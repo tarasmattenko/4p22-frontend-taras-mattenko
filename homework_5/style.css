@@ -117,7 +117,7 @@ color: #FFFFFF;
 
 .full-list__element-name {
     position: sticky;
-    top:200px;
+    top:141px;
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     background-color: rgb(75, 24, 218);
@@ -148,7 +148,7 @@ color: #FFFFFF;
     position: fixed;
     top: 89px;
     left: 302px;
-    height: 19%;
+    height: 9%;
     width: 85%;
     padding: 10px;
     z-index: 40;
