@@ -2,28 +2,29 @@
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+@font-face {
+    font-family: 'Roboto', sans-serif;   
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap'); 
+}
 
 body {
     margin: 0;
+    padding: 20px;
     position: absolute;
-    width: 1440px;
+    width: 768px;
     height: 737px;
     background: #1B2473;
 }
 
-.square {
-    
-}
 
 .form__square {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    width: 600px;
-    height: 412px;
-    left: 412px;
-    top: 82px;
+    width: 728px;
+    height: 697px;
+    left: 20px;
+    top: 20px;
     background: #FFFFFF;
     box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
@@ -43,6 +44,7 @@ body {
 }
 
 .form__form-email {
+    margin-top: 125px;
 
 }
 
@@ -56,24 +58,23 @@ body {
 
 
 .form__label-email {
-    width: 40px;
+    width: 60px;
     height: 16px;
     left: 8px;
-    top: -19px;
+    top: 0px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 24px;
     line-height: 16px;
     color: #787878;
 }
 
 .form__input-email {
-    box-sizing: border-box;
-    width: 509px;
+    width: 638px;
     height: 49px;
     left: 0px;
-    top: 0px;
+    top: 24px;
     background: #FFFFFF;
     border: 2px solid #787878;
     border-radius: 10px;
@@ -93,11 +94,10 @@ body {
 }
 
 .form__input-password {
-    box-sizing: border-box;
-    width: 509px;
+    width: 638px;
     height: 49px;
     left: 0px;
-    top: 0px;
+    top: 24px;
     background: #FFFFFF;
     border: 2px solid #787878;
     border-radius: 10px;
@@ -108,7 +108,6 @@ body {
     height: 16px;
     left: 42px;
     top: 8px;
-
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
