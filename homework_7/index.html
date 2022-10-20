@@ -8,21 +8,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <form class="form__square" action="">
-        <h1 class="form__name">Вход</h1>
-        <div class="form__form-email">
-            <label class="form__label-email" for="email_input">Email</label><br>
-            <input class="form__input-email" id="email_input" name="email" type="email" placeholder="Введите email">
-        </div>
-        <div class="form__form-password">
-            <label class="form__label-password" for="password_input">Пароль</label><br>
-            <input class="form__input-password" id="form__input" name="password" type="password" placeholder="Введите пароль">
-        </div>    
-        <div class="form__form-checkbox">
-            <label class="form__approval" for="approval">Я согласен получать обновления на почту</label>
-            <input class="form__checkbox-approval" type="checkbox" id="approval" name="decision" value="yes">
-        </div>
-        <button class="form__button" type="submit">Войти</button>
-    </form>       
+    <div class="form">
+        <form class="form__square" action="">
+            <h1 class="form__name">Вход</h1>
+            <div class="form__form-email">
+                <label class="form__label-email" for="email_input">Email</label>
+                <input class="form__input-email" id="email_input" name="email" type="email" placeholder="Введите email">
+            </div>
+            <div class="form__form-password">
+                <label class="form__label-password" for="password_input">Пароль</label>
+                <input class="form__input-password" id="form__input" name="password" type="password" placeholder="Введите пароль">
+            </div>    
+            <div class="form__form-checkbox">
+                <input class="form__checkbox-approval" type="checkbox" id="approval" name="decision" value="yes">
+                <label class="form__approval" for="approval">Я согласен получать обновления на почту</label> 
+            </div>
+            <button class="form__button" type="submit">Войти</button>
+        </form>
+    </div>           
 </body>
 </html>
