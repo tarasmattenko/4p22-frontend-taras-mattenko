@@ -8,10 +8,10 @@
     src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap'); 
 }
 
-.body {
-    height: 100vh;
+body {
     margin: 0;
-    padding: 0;
+    font-family: Roboto;
+    width: 100%;
 }
 
 .form {
@@ -26,13 +26,13 @@
 
 
 .form__square {
+    max-width: 600px;
+    margin: 0 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 728px;
+    width: 100%;
     height: 697px;
-    left: 20px;
-    top: 20px;
     background: #FFFFFF;
     box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
@@ -40,8 +40,8 @@
 
 
 .form__name  {
-    margin-bottom: 0;
-    margin-top: 5.4%;
+    margin-bottom:13px;
+    margin-top: 38px;
     width: 138px;
     height: 50px;
     font-family: 'Roboto';
@@ -55,15 +55,18 @@
 
 
 .form__form-email {
+    width: 100%;
+    padding: 0px 45px;
     margin-top: 13px;
     display: flex;
     flex-direction: column;
+    font-family: 'Roboto';
 }
 
 
 .form__label-email {
     margin-bottom: 8px;
-    width: 60px;
+    width: 100%;
     height: 16px;
     left: 8px;
     top: 0px;
@@ -77,17 +80,27 @@
 
 
 .form__input-email {
-    width: 638px;
-    height: 49px;
-    left: 0px;
-    top: 24px;
+    width: 100%;
+    padding: 5px 13px;
     background: #FFFFFF;
     border: 2px solid #787878;
     border-radius: 10px;
+    Font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+}
+
+.form__input-email::placeholder {
+    
+    color: #CCCCCC;
 }
 
 
 .form__form-password{
+    width: 100%;
+    padding: 0px 45px;
     display: flex;
     flex-direction: column;
     margin-top: 13px;
@@ -96,7 +109,7 @@
 
 .form__label-password {
     margin-bottom: 8px;
-    width: 84px;
+    width: 100%;
     height: 16px;
     left: 8px;
     top: 0px;
@@ -110,44 +123,78 @@
 
 
 .form__input-password {
-    width: 638px;
-    height: 49px;
-    left: 0px;
-    top: 24px;
+    width: 100%;
+    padding: 5px 13px;
     background: #FFFFFF;
     border: 2px solid #787878;
     border-radius: 10px;
+    Font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+}
+
+.form__input-password::placeholder{
+    color: #CCCCCC;
 }
 
 
 .form__form-checkbox {
+    position: relative;
     display: flex;
     align-self:flex-start;
-    margin: 0px 0px 0px 45px;
+    width: 100%;
 }
 
 
 .form__checkbox-approval {
-    margin-top: 19px;
+    position: absolute;
+    opacity: 0;
+    /* margin-top: 19px;
     box-sizing: border-box;
     display: flex;
     width: 32px;
     height: 32px;
-    left: 0px;
-    top: 0px;
-
+    margin: 19px 10px 0px 45px;
     background: #FFFFFF;
     border: 2px solid #787878;
+    border-radius: 7px; */
+}
+
+.form__checkbox-approval:checked + .form__approval::after{
+    opacity: 1;
+}
+
+.form__approval::before {
+    content: '';
+    margin: 16px 10px 0px 45px;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 0px;
+    top: 0px;
+    border: 1px solid #787878;
     border-radius: 7px;
+}
+
+.form__approval::after {
+    content: '';
+    position: absolute;
+    opacity: 0;
+    width: 16px;
+    height: 16px;
+    left: 54px;
+    top: 25px;
+    background-color:#787878;
 }
 
 
 .form__approval {
     margin-top: 27px;
-    width: 358px;
+    width: 100%;
     height: 16px;
-    left: 42px;
-    top: 8px;
+    margin-left: 92px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -158,14 +205,11 @@
 
 .form__button {
     margin-top: 64px;
-    width: 220px;
-    height: 80px;
+    padding: 32px 64px ;
     left: 0px;
     top: 0px;
     background: #1A226B;
     border-radius: 10px;
-    left: 64px;
-    top: 32px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -175,8 +219,20 @@
 }
 
 
-@media screen and (max-width: 1440px) and (min-width: 769px) {
+@media screen  and (min-width: 769px) {
+    
+    .form {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0px;
+        height: 100vh;
+        background: #1B2473;
+    }
+    
     .form__square {
+        max-width: 600px;
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -192,8 +248,8 @@
     
     
     .form__name  {
-        margin-bottom: 0;
-        margin-top: 38px;
+        margin-bottom: 17;
+        margin-top: 26px;
         width: 115px;
         height: 50px;
         left: 242px;
@@ -230,13 +286,17 @@
     
     
     .form__input-email {
-        width: 509px;
-        height: 49px;
-        left: 0px;
-        top: 0px;
+        width: 100%;
+        padding: 5px 13px; 
         background: #FFFFFF;
         border: 2px solid #787878;
         border-radius: 10px;
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .form__input-email::placeholder {
+        color: #CCCCCC;
     }
     
     
@@ -263,25 +323,27 @@
     
     
     .form__input-password {
-        width: 509px;
-        height: 49px;
-        left: 0px;
-        top: 0px;
+        width: 100%;
         background: #FFFFFF;
         border: 2px solid #787878;
         border-radius: 10px;
+    }
+
+    .form__input-password::placeholder{
+        color: #CCCCCC;
     }
     
     
     .form__form-checkbox {
         display: flex;
         align-self:flex-start;
-        margin: 0px 0px 0px 45px;
+        margin: 0;
     }
     
     
     .form__checkbox-approval {
         margin-top: 16px;
+        margin: 16px 10px 0px 45px;
         box-sizing: border-box;
         display: flex;
         width: 24px;
@@ -295,31 +357,27 @@
     
     
     .form__approval {
-        margin-top:  calc(27 / 1440 * 100vw);
+        margin-top: 27px;
         width: 278px;
         height: 16px;
-        left: 34px;
-        top: 4px;
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
-        font-size: calc(14 / 1440 * 100vw);
-        line-height: calc(16 / 1440 * 100vw);
+        font-size: 14px; 
+        line-height: 16px;
         color: #787878;
     }
     
     .form__button {
-        width: calc(180 / 1440 * 100vw);
-        height: calc(52 / 1440 * 100vw);
-        margin-right: auto;
-        margin-left: auto;
-        margin-top: calc(34 / 1440 * 100vw);
+        margin-top: 26px;
+        padding: 18px 55px;
+        width: 180px;
         background: #1a226b;
-        border-radius: calc(10 / 1440 * 100vw);
+        border-radius:10px;
 
         font-weight: 700;
-        font-size: calc(24 / 1440 * 100vw);
-        line-height: calc(16 / 1440 * 100vw);
+        font-size: 24px;
+        line-height: 16px;
         color: #ffffff;
     }
 
