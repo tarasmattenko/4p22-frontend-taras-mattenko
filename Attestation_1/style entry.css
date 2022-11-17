@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Общие стили */
+
+.header__page {
+    display: flex;
+    height: 84px;;
+    padding: 18px 30px 16px 30px ;
+    font-family: "Inter";
+    font-weight: 700;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.header__logo {
+    margin-right: 30px;
+}
+
+
+.header__tittle {
+    font-size: 36px;
+    line-height: 44px;
+    align-self: center;
+    color: rgb(120, 120, 120);
+}
+
+
+.header__link {
+    margin-left: auto;
+    align-self: center;
+    font-size: 24px;
+    line-height: 29px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+}
+ 
+.header__registration {
+    text-decoration: none;
+    color: rgb(120, 120, 120);
+}
+
+.header__login {
+    text-decoration: none;
+    color: rgb(26, 34, 107);
+    margin-left: 29px;
+}
+
+.main {
+    background: #FFFFFF;
+}
+
+/* Форма входа */
+
+.main__card {
+    /* height: 383px; */
+    width: 600px;
+    padding: 26px 45px 37px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+    margin: 0 auto;
+    margin-top: 125px;
+    margin-bottom: 233px;
+}
+
+
+.entry_card__title {
+    font-family: "Roboto";
+    font-weight: 700;
+    text-align: center;
+    font-size: 50px;
+    line-height: 50px;
+    color: rgb(120, 120, 120);
+}
+
+.entry-card__form-entry form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    padding: 26px 46px 35px;
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+}
+
+.input-lable {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form__input-label {
+    align-self: flex-start;
+    margin-bottom: 10px;
+}
+
+.entry-card__form-entry {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 17px;
+    color: #787878;
+}
+
+.entry-card__lable {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    padding-left: 8px;
+}
+
+.entry-card__input {
+    border: 2px solid #787878;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    color: #787878;
+    padding: 5px 13px;
+    margin-top: 4px;
+}
+
+.entry-card__input::placeholder {
+    color: #CCCCCC;
+    opacity: 0,4;
+}
+
+.entry-card__button {
+    margin-top: 42px;
+    width: 180px;
+    align-self: center;
+    background-color: #1A226B;
+    padding: 18px 0;
+    color: #FFF;
+    font-size: 24px;
+    line-height: 16px;
+    font-weight: 700;
+}
+
+/* Форма регистрации */
+
+.radio-group {
+    
+}
+
+.radio__legend {
+    display: inline-block;
+    margin-bottom: 7px;
+    padding-left: 8px;
+}
+
+.radio__element {
+    position: relative;
+}
+
+.radio__element:not(:last-child) {
+    margin-bottom: 14px;
+}
+
+.radio-group__input {
+    opacity: 0;
+}
+
+.radio-group__input:checked + .radio-group__label::after {
+    background-color: #CCCCCC;
+}
+
+.radio-group__label {
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.radio-group__lable::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(120, 120, 120);
+    border-radius: 50%;
+}
+.radio-group-lable::after {
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.textarea-group {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.textarea-group__lable {
+    margin-bottom: 7px;
+    padding-left: 8px;
+}
+
+.textarea-group__input {
+    border: 2px solid rgb(120, 120, 120);
+    color: rgb(120, 120, 120);
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 700;
+    padding: 6px 11px;
+    height: 246px;
+    resize: none;
+}
+
+.textarea-group__input::placeholder {
+color: #CCCCCC;
+}
+
+
+.checkbox-group {
+    position: relative;
+    display: flex;
+}
+
+.checkbox-group__input {
+    opacity: 0;
+    margin-top: 24px; 
+}
+
+.checkbox-group__input:checked + .checkbox-group__label::after {
+    background-color: #CCCCCC;
+}
+
+.checkbox-group__label{
+    margin-left: 17px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+.checkbox-group__label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    border: 2px solid rgb(120, 120, 120);
+}
+
+.checkbox-group__label::after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .radio__legend {
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .textarea-group__lable {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .textarea-group__input {
+        font-size: 24px;
+        line-height: 30px;
+    }
+}

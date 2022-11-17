@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style entry.css">
+    <!-- сюда второй файл css с цветом хедера РЕГИСТРАЦИ -->
+    <link rel="stylesheet" href="style reg.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,regular,italic,500,700,900," rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <title>Registration_form</title>
+</head>
+<body>
+    <header class="header__page">
+        <img class="header__logo" src="logo.png" alt="logo">
+        <div class="header__tittle">PCS Frontend</div>
+        <div class="header__link">
+            <a href="./" class="header__registration">Регистрация</a>
+            <a href="./Entry_form.html" class="header__login">Вход</a>
+    </header>
+</body>
+<main class="main">
+    <div class="main__card">
+        <div class="entry_card__title">Регистрация</div>
+        <form action="#" class="entry-card__form-entry form">
+            <div class="form__input-label input-lable">
+                <label class="entry-card__lable form__lable" for="email">Email</label>
+                <input class="entry-card__input form__input" type="email" name="email" id="email" placeholder="Введите email">
+            </div>
+            <div class="form__input-label input-lable">  
+                <label class="entry-card__lable form__lable" for="password">Password</label>
+                <input class="entry-card__input form__input" type="text" name="password" id="password" placeholder="Введите пароль">
+            </div>
+            <div class="form__input-label input-lable">  
+                <label class="entry-card__lable form__lable" for="password">Password confirmation</label>
+                <input class="entry-card__input form__input" type="text" name="password" id="password" placeholder="Подтвердите пароль">
+            </div>
+            <div class="radio-group form-entry__radio-group">
+                <legend class="radio__legend">Пол</legend>
+                <div class="radio__element">
+                    <input class="radio-group__input" type="radio" name="sex" id="man" value="MAN">
+                    <label class="radio-group__label" for="man">Мужчина</label>
+                </div>
+                <div class="radio__element">
+                    <input class="radio-group__input" type="radio" name="sex" id="woman" value="WOMAN">
+                    <label class="radio-group__label" for="woman">Женщина</label>
+                </div>
+            </div>
+            <div class="textarea-group form-entry__textarea-group">
+                <label class="textarea-group__lable">О себе</label>
+                <textarea class="textarea-group__input" name="comment" id="comment" contenteditable="false" placeholder="Расскажите о себе..."></textarea>
+            </div>
+            <div class="checkbox-group form-entry__checkbox-group">
+                <input class="checkbox-group__input" type="checkbox" id="checkbox" name="checkbox" value="TRUE">
+                <label class="checkbox-group__label" for="checkbox">Я согласен получать обновления на почту</label>
+            </div>
+            <button class="entry-card__button">Регистрация</button>
+        </form>
+    </div>    
+</main>
+</html>
